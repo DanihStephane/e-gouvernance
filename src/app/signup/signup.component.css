@@ -1,9 +1,7 @@
 .register-form{
-  max-width: 400px;
-  margin: auto;
   width: 100%;
-  padding: 45px;
-  background: #fff;
+  justify-content: space-around;
+  overflow: auto;
 }
 ::ng-deep app-root,
 ::ng-deep app-signin{
@@ -16,4 +14,19 @@
   align-items: center;
   flex-direction: column;
   background-color: #f3f3f3;
+  justify-content: center;
+  background: url("../../assets/images/antananarivo.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media (max-width: 992px) {
+  .register-form{
+    flex-direction: column;
+    gap: 0px!important;
+    align-items: center;
+  }
+  .register-form .logo img{
+    max-width: 155px;
+    width: 100%;
+  }
 }

@@ -1,4 +1,57 @@
-
+::ng-deep html, body {
+  height: 100%;
+}
+::ng-deep mat-form-field .ico.passe{
+  background: #e6e6e6 url("../assets/images/locks.svg") no-repeat center;
+  background-size: contain;
+}
+::ng-deep mat-form-field .ico{
+  display: block;
+  width: 45px;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: -49px;
+}
+::ng-deep mat-form-field .ico.user{
+  background: #e6e6e6 url("../assets/images/utilisateur.svg") no-repeat center;
+  background-size: 25px;
+}
+::ng-deep mat-form-field .ico.mail{
+  background: #e6e6e6 url("../assets/images/email.svg") no-repeat center;
+  background-size: 17px;
+}
+::ng-deep mat-form-field .ico.phone{
+  background: #e6e6e6 url("../assets/images/phone.svg") no-repeat center;
+  background-size: 17px;
+}
+::ng-deep mat-form-field .ico.pin{
+  background: #e6e6e6 url("../assets/images/pin.svg") no-repeat center;
+  background-size: 17px;
+}
+::ng-deep .mat-mdc-form-field-icon-suffix{
+  position: absolute!important;
+  left: 0;
+  background: #e6e6e6;
+  width: 40px;
+}
+::ng-deep .mat-mdc-form-field-icon-suffix .mat-mdc-icon-button{
+  padding-left: 0;
+}
+::ng-deep .mat-mdc-form-field-icon-suffix .mat-mdc-icon-button svg{
+  fill: #545454!important;
+}
+::ng-deep .form-content{
+  background-color: #fff;
+  max-width: 300px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 35px;
+}
+::ng-deep .form-content mat-form-field .mat-mdc-text-field-wrapper{
+  padding-left: 3rem;
+}
 ::ng-deep .ng-trigger{
   background-color: #fff!important;
   color: black;
@@ -15,7 +68,7 @@
   margin-right: 10px;
 }
 ::ng-deep .btn-default{
-  padding: 7px 15px;
+  padding: 6px 15px;
   text-align: center;
   background: #564474;
   color: #fff;
@@ -160,4 +213,17 @@
 }
 ::ng-deep .mat-calendar-controls button:after{
   border-color: #333!important;
+}
+::ng-deep .mat-mdc-form-field-infix{
+
+  padding-top: 18px!important;
+  min-height: 30px;
+  height: 40px;
+
+}
+::ng-deep .mdc-text-field--filled .mdc-floating-label{
+  top: 23px!important;
+}
+::ng-deep .mat-mdc-text-field-wrapper{
+  height: 40px;
 }

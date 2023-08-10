@@ -4,34 +4,6 @@
   justify-content: space-around;
 }
 
-
-::ng-deep .form-content{
-  background-color: #fff;
-  max-width: 300px;
-  width: 100%;
-  padding: 25px;
-  border-radius: 35px;
-}
-::ng-deep  mat-form-field .mat-mdc-text-field-wrapper{
-  padding-left: 3rem;
-}
-::ng-deep mat-form-field .ico{
-  display: block;
-  width: 45px;
-  height: 100%;
-  background-color: red;
-  position: absolute;
-  top: 0;
-  left: -49px;
-}
-::ng-deep mat-form-field .ico.user{
-  background: #e6e6e6 url("../../assets/images/user.svg") no-repeat center;
-  background-size: 25px;
-}
-::ng-deep mat-form-field .ico.passe{
-  background: #e6e6e6 url("../../assets/images/locked.svg") no-repeat center;
-  background-size: contain;
-}
 ::ng-deep .form-content .profile{
   width: 100px;
   height: 100px;
@@ -68,7 +40,7 @@
     align-items: center;
   }
   .login-form .logo img{
-    max-width: 200px;
+    max-width: 155px;
     width: 100%;
   }
 }
