@@ -222,8 +222,31 @@
 
 }
 ::ng-deep .mdc-text-field--filled .mdc-floating-label{
-  top: 23px!important;
+  top: 20px!important;
 }
 ::ng-deep .mat-mdc-text-field-wrapper{
   height: 40px;
+}
+::ng-deep .toolbar .logo{
+  display: flex;
+  align-items: center;
+}
+::ng-deep .toolbar .logo img{
+  max-height: 110px;
+}
+
+/*Menu*/
+::ng-deep .wrap-sidebar-nav .sidebare-page .toolbar {
+  background-color: #375ca2;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem 0rem; }
+::ng-deep .nav-menu{
+  display: flex;
+  justify-content: space-between;
+}
+::ng-deep .wrap-sidebar-nav .sidebare-page .toolbar .list-menu{
+  max-width: 1200px;
+  margin: auto;
+
 }

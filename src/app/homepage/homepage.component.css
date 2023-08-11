@@ -30,15 +30,8 @@
   margin-bottom: 3rem; }
 .wrap-sidebar-nav .sidebare-page {
   width: 100%;
-  background-color: #f3f3f3;
-  padding-left: 250px;
-  min-height: 100vh; }
-.wrap-sidebar-nav .sidebare-page .toolbar {
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-  padding: 1rem 1.5rem 0rem; }
+  background-color: #f3f3f3; }
+
 .wrap-sidebar-nav .sidebare-page .toolbar .btn-default {
   height: 53px;
   background: #5c8eff; }
