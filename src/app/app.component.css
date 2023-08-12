@@ -298,7 +298,7 @@
 ::ng-deep .nav-menu .avatar{padding-right: 15px}
 ::ng-deep .nav-menu .avatar p {
   color: #fff;
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 500;
 }
 ::ng-deep .wrap-sidebar-nav .sidebare-page .toolbar .list-menu{
@@ -396,6 +396,7 @@
   position: relative;
   font-size: 28px;
   font-weight: 500;
+  cursor: pointer;
 }
 ::ng-deep .actus:before{
  content: "";
@@ -568,5 +569,9 @@
   }
   ::ng-deep .toolbar .logo span{
     display: none;
+  }
+  ::ng-deep .nav-menu .avatar p,
+  ::ng-deep .list-menu .mdc-list-item__primary-text{
+    font-size: 20px!important;
   }
 }
