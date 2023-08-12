@@ -16,9 +16,9 @@ import {SnackbarService} from "../../../shared/snackbar.service";
 import {FormBuilder, Validators, FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @Component({
-  selector: 'app-list',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css'],
+  selector: 'app-list-create',
+  templateUrl: './list-create.component.html',
+  styleUrls: ['./list-create.component.css'],
   standalone: true,
   imports: [
     MatCardModule,
@@ -37,15 +37,13 @@ import {FormBuilder, Validators, FormsModule, ReactiveFormsModule} from '@angula
     SnackbarService
   ]
 })
-export class ListComponent {
-
+export class ListCreateComponent {
   constructor(
     private router: Router,
     public dialog: Dialog
   ) {
 
   }
-
   logout(): void{
     this.router.navigate(['/signin']);
   }
@@ -64,9 +62,5 @@ export class ListComponent {
 
   create(): void{
     this.router.navigate(['/create']);
-  }
-
-  openCreateDemandeModal(): void {
-    this.dialog.open<string>(CreateComponent);
   }
 }

@@ -1,0 +1,58 @@
+<div class="wrap-sidebar-nav">
+
+  <div class="sidebare-page">
+    <div class="toolbar">
+      <div class="nav-menu ">
+        <div class="logo">
+          <img src="../../assets/images/commune.png" alt="">
+          <span class="text-white">e-gouvernance</span>
+        </div>
+        <div class="avatar d-flex align-items-start " (click)="logout()">
+          <div class="d-flex align-items-center gap-4">
+            <div class="img">
+              <img src="../../assets/images/profile.jpg" alt="">
+            </div>
+            <p class="mb-0">
+              Deconnexion
+            </p>
+          </div>
+        </div>
+      </div>
+      <mat-list role="list" class="list-menu d-flex">
+        <mat-list-item role="listitem" class="text-black" (click)="homePage()">
+          <div class="d-flex align-items-center gap-4 actus">
+            Actualités
+          </div>
+        </mat-list-item>
+        <mat-list-item role="listitem" class="text-black" (click)="demande()">
+          <div class="d-flex align-items-center gap-4 demande">
+
+            Demandes
+          </div>
+        </mat-list-item>
+        <mat-list-item role="listitem" class="text-black" (click)="information()">
+          <div class="d-flex align-items-center gap-4 info">
+            Informations
+          </div>
+        </mat-list-item>
+      </mat-list>
+
+    </div>
+
+    <div class="search-block">
+      <div class="container">
+        <h2>Demandes</h2>
+        <form class="search-form">
+          <mat-form-field class="example-full-width">
+            <span class="ico search"></span>
+            <mat-label>Favorite food</mat-label>
+            <input type="search" matInput placeholder="Ex. Pizza" value="">
+          </mat-form-field>
+        </form>
+      </div>
+    </div>
+    <div class="content-page-sidebare">
+
+    </div>
+  </div>
+</div>
