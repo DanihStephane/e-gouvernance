@@ -7,128 +7,54 @@
         <span class="text-white">e-gouvernance</span>
       </div>
 
-      <mat-list role="list">
-        <mat-list-item role="listitem" class="text-black" (click)="logout()">
+      <div class="avatar d-flex align-items-start " (click)="logout()">
           <div class="d-flex align-items-center gap-4">
-            <svg width="20px" height="25px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
-              <path stroke="#5c8eff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M20 12h-9.5m7.5 3l3-3-3-3m-5-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2h5a2 2 0 002-2v-1"/>
-            </svg>
-            Deconnexion
+            <div class="img">
+              <img src="../../assets/images/profile.jpg" alt="">
+            </div>
+            <p class="mb-0">
+              Deconnexion
+            </p>
           </div>
-        </mat-list-item>
-      </mat-list>
+      </div>
     </div>
       <mat-list role="list" class="list-menu d-flex ">
         <mat-list-item role="listitem" class="text-black" (click)="homePage()">
-          <div class="d-flex align-items-center gap-4">
-            <svg fill="#5c8eff" height="15px" width="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                 viewBox="0 0 27.963 27.963" xml:space="preserve">
-            <g> <g id="c140__x2B_">
-                <path d="M13.98,0C6.259,0,0,6.26,0,13.982s6.259,13.981,13.98,13.981c7.725,0,13.983-6.26,13.983-13.981
-                  C27.963,6.26,21.705,0,13.98,0z M21.102,16.059h-4.939v5.042h-4.299v-5.042H6.862V11.76h5.001v-4.9h4.299v4.9h4.939v4.299H21.102z
-                  "/>
-              </g>  <g id="Capa_1_9_">  </g>
-            </g>
-          </svg>
+          <div class="d-flex align-items-center gap-4 actus">
+
             Actualités
           </div>
         </mat-list-item>
         <mat-list-item role="listitem" class="text-black" (click)="demande()">
-          <div class="d-flex align-items-center gap-4">
-            <svg fill="#5c8eff" height="15px" width="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                 viewBox="0 0 27.963 27.963" xml:space="preserve">
-            <g>
-              <g id="c140__x2B_">
-                <path d="M13.98,0C6.259,0,0,6.26,0,13.982s6.259,13.981,13.98,13.981c7.725,0,13.983-6.26,13.983-13.981
-                  C27.963,6.26,21.705,0,13.98,0z M21.102,16.059h-4.939v5.042h-4.299v-5.042H6.862V11.76h5.001v-4.9h4.299v4.9h4.939v4.299H21.102z
-                  "/>
-              </g>
-              <g id="Capa_1_9_">
-              </g>
-            </g>
-          </svg>
+          <div class="d-flex align-items-center gap-4 demande">
             Demandes
           </div>
         </mat-list-item>
         <mat-list-item role="listitem" class="text-black" (click)="information()">
-          <div class="d-flex align-items-center gap-4">
-            <svg fill="#5c8eff" height="15px" width="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                 viewBox="0 0 27.963 27.963" xml:space="preserve">
-            <g>
-              <g id="c140__x2B_">
-                <path d="M13.98,0C6.259,0,0,6.26,0,13.982s6.259,13.981,13.98,13.981c7.725,0,13.983-6.26,13.983-13.981
-                  C27.963,6.26,21.705,0,13.98,0z M21.102,16.059h-4.939v5.042h-4.299v-5.042H6.862V11.76h5.001v-4.9h4.299v4.9h4.939v4.299H21.102z
-                  "/>
-              </g>
-              <g id="Capa_1_9_">
-              </g>
-            </g>
-          </svg>
+          <div class="d-flex align-items-center gap-4 info">
             Informations
           </div>
         </mat-list-item>
       </mat-list>
     </div>
+    <div class="search-block">
+      <div class="container">
+        <h2>Information</h2>
+        <form class="search-form">
+          <mat-form-field class="example-full-width">
+            <span class="ico search"></span>
+            <mat-label>Favorite food</mat-label>
+            <input type="search" matInput placeholder="Ex. Pizza" value="">
+          </mat-form-field>
+        </form>
+      </div>
+    </div>
 
     <div class="content-page-sidebare">
-      <div cdkDropListGroup class="d-flex gap-4 justify-content-between">
-
-        <mat-card class="bg-white p-4">
-          <mat-card-header>
-            <mat-card-title>> Information</mat-card-title>
-          </mat-card-header>
-
-          <!--          <div *ngFor="let item of news">-->
-          <mat-card-content class="example-container">
-            <!--interne-->
-            <div>
-              <mat-card class="bg-white mat-card-interne w-100 example-box">
-                <mat-card-header class="w-100 mb-4">
-                  <mat-card-title>
-                    <!--                      {{item.title}}-->
-                    Title de l'information
-                  </mat-card-title>
-                  <mat-card-subtitle>
-                    <div class="avatar d-flex align-items-start ">
-                      <div class="d-flex align-items-center gap-4">
-                        <p class="mb-0">
-                            <span class="d-block text-black">
-<!--                              {{item.description}}-->
-                              Description
-                            </span>
-                        </p>
-                        <div class="img">
-                          <img src="../../assets/images/profile.jpg" alt="">
-                        </div>
-
-                      </div>
-                    </div>
-                  </mat-card-subtitle>
-                </mat-card-header>
-
-                <mat-card-content>
-                  <div class="drag-here">
-                    Loremp ipsum Loremp ipsum Loremp ipsum Loremp ipsum Loremp ipsum Loremp ipsum Loremp ipsum
-                    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-                         alt="Photo of a Shiba Inu">
-                  </div>
-                </mat-card-content>
-                <mat-card-actions class="d-flex align-items-center justify-content-center p-4">
-                  <button mat-button>
-                    <!--                      {{item.creationDateTime}}-->
-                    Creation Date Time
-                  </button>
-                </mat-card-actions>
-              </mat-card>
-            </div>
-          </mat-card-content>
-          <!--          </div>-->
-
-        </mat-card>
+      <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cum ea eveniet id,
+          illo ipsa labore natus non optio quam quod voluptatem voluptates? A,
+          consequuntur inventore ipsum nemo reprehenderit veritatis!</p>
       </div>
     </div>
   </div>

@@ -15,11 +15,24 @@
   flex-direction: column;
   background-color: #f3f3f3;
   justify-content: center;
-  background: url("../../assets/images/antananarivo.jpg") no-repeat center;
+  background: url("../../assets/images/fond.jpg") no-repeat center;
   background-size: cover;
 }
 
+::ng-deep .register-form .logo{
+  width: 100%;
+  max-width: 430px;
+}
+::ng-deep .register-form .logo img{
+  width: 100%;
+}
+
 @media (max-width: 992px) {
+  .register-form .logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
   .register-form{
     flex-direction: column;
     gap: 0px!important;
@@ -28,5 +41,6 @@
   .register-form .logo img{
     max-width: 155px;
     width: 100%;
+    height: auto;
   }
 }

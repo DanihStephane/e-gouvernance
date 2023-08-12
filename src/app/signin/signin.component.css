@@ -30,10 +30,26 @@
   flex-direction: column;
   background-color: #f3f3f3;
   justify-content: center;
-  background: url("../../assets/images/antananarivo.jpg") no-repeat center;
+  background: url("../../assets/images/fond.jpg") no-repeat center;
   background-size: cover;
 }
+::ng-deep .mx-350{
+  max-width: 350px;
+  width: 100%;
+  gap: 4rem;
+}
+::ng-deep .login-form .logo{
+  width: 100%;
+  max-width: 430px;
+}
+::ng-deep .login-form .logo img{
+  width: 100%;
+}
 @media (max-width: 992px) {
+  .login-form .logo{
+    display: flex;
+    justify-content: center;
+  }
   .login-form{
     flex-direction: column;
     gap: 76px!important;
@@ -42,5 +58,6 @@
   .login-form .logo img{
     max-width: 155px;
     width: 100%;
+    height: auto;
   }
 }
