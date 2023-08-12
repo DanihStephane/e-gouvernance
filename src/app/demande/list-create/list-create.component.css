@@ -5,16 +5,14 @@ body,html{
   display: flex;
   flex-direction: column;
   align-items: flex-start; }
-
-.demo-section + .demo-section {
-  margin-top: 16px; }
-::ng-deep app-list{
+::ng-deep app-list-create{
   height: 100%;
   display: block;
   background: url("../../../assets/images/fond.jpg") no-repeat center;
   background-size: cover;
   overflow: auto;
 }
+
 ::ng-deep app-root,
 ::ng-deep app-homepage {
   height: 100%;

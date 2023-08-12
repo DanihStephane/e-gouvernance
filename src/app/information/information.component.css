@@ -33,7 +33,11 @@ body,html{
 .avatar .img img {
   width: 100%; }
 
-
+::ng-deep .information .horaire{
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 25px;
+}
 
 
 ::ng-deep .sidebare-page .content-page-sidebare {
