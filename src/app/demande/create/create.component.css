@@ -14,16 +14,6 @@
 .mat-mdc-form-field {
   margin-top: 16px;
 }
-/*::ng-deep .cdk-global-overlay-wrapper{*/
-/*  display: block;*/
-/* }*/
-/*::ng-deep .cdk-overlay-pane,*/
-/*::ng-deep .cdk-dialog-container{*/
-/*  height: 100%;*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*}*/
 ::ng-deep .mat-stepper-horizontal,
 ::ng-deep .mat-stepper-vertical{
   background-color: #ffffff;

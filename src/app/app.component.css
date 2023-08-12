@@ -514,6 +514,17 @@
 ::ng-deep .card .card-img img{
   width: 100%;
 }
+::ng-deep .liste-card-creat .card .card-img{
+  box-sizing: border-box;
+  max-width: 330px;
+}
+::ng-deep .liste-card-creat .card{
+  padding: 15px;
+  border: 4px #fff solid;
+}
+::ng-deep .liste-card-creat .liste-card{
+  flex-flow: row wrap;
+}
 @media (max-width: 992px) {
   ::ng-deep .card .card-img img{
     width: auto;
