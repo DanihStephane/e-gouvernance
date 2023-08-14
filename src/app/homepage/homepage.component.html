@@ -6,14 +6,17 @@
           <img src="../../assets/images/commune.png" alt="">
           <span class="text-white">e-gouvernance</span>
         </div>
-        <div class="avatar d-flex align-items-start " (click)="logout()">
+        <div class="avatar d-flex align-items-start " >
           <div class="d-flex align-items-center gap-4">
             <div class="img">
               <img src="../../assets/images/profile.jpg" alt="">
             </div>
-            <p class="mb-0">
-              Deconnexion
-            </p>
+            <div>
+              <button mat-button [matMenuTriggerFor]="menu">Amanda</button>
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item (click)="logout()">Deconnexion</button>
+              </mat-menu>
+            </div>
           </div>
         </div>
       </div>

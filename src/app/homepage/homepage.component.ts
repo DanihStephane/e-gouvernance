@@ -6,6 +6,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
 import {NgFor} from '@angular/common';
 import {
   CdkDragDrop,
@@ -34,6 +35,7 @@ import {News} from "../../shared/news.model";
     MatNativeDateModule,
     MatInputModule,
     MatButtonModule,
+    MatMenuModule,
     CdkDropListGroup, CdkDropList, NgFor, CdkDrag,DragDropModule
   ],
 })
